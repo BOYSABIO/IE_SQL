@@ -1,0 +1,49 @@
+{
+	"folders": {},
+	"connections": {
+		"db2-1921f60c317-3fa7f3522a969314": {
+			"provider": "db2",
+			"driver": "db2",
+			"name": "SAMPLE",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "50000",
+				"database": "SAMPLE",
+				"url": "jdbc:db2://localhost:50000/SAMPLE",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"auth-model": "native"
+			},
+			"filters": [
+				{
+					"type": "org.jkiss.dbeaver.ext.db2.model.DB2Schema",
+					"name": "localadmin",
+					"enabled": true,
+					"include": ["localadmin"]
+				}
+			]
+		}
+	},
+	"saved-filters": [
+		{
+			"name": "localadmin",
+			"enabled": true,
+			"include": ["localadmin"]
+		}
+	],
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": false,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800
+		}
+	}
+}
